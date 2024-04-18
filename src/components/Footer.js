@@ -12,6 +12,7 @@ function Footer() {
             <a
               href="https://web.facebook.com/profile.php?id=61558489109024"
               className="text-white hover:text-gray-200"
+              target="_blank"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
@@ -20,6 +21,7 @@ function Footer() {
             <a
               href="https://wa.me/+905376395644"
               className="text-white hover:text-gray-200"
+              target="_blank"
             >
               <i className="fab fa-whatsapp"></i>
             </a>
@@ -28,6 +30,7 @@ function Footer() {
             <a
               href="https://www.instagram.com/labomonetaires/"
               className="text-white hover:text-gray-200"
+              target="_blank"
             >
               <i className="fab fa-instagram"></i>
             </a>
@@ -36,6 +39,7 @@ function Footer() {
             <a
               href="https://www.youtube.com/@labomonetaire-el4pl/videos"
               className="text-white hover:text-gray-200"
+              target="_blank"
             >
               <i className="fab fa-youtube"></i>
             </a>
