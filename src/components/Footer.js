@@ -44,6 +44,16 @@ function Footer() {
               <i className="fab fa-youtube"></i>
             </a>
           </li>
+
+          <li className="mx-2">
+            <a
+              href="https://www.linkedin.com/in/laboratoire-monetaire-496964304/"
+              className="text-white hover:text-gray-200"
+              target="_blank"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>

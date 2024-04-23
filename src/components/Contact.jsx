@@ -8,6 +8,7 @@ import {
   Paper,
   Snackbar,
 } from "@mui/material";
+import CustomParticles from "./CustomParticles";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -83,6 +84,7 @@ const ContactSection = () => {
       id="Contact"
       className="bg-gradient-to-b from-blue-100 to-transparent p-9"
     >
+      <CustomParticles />
       <Container>
         <h2 className="text-3xl font-bold text-start mb-8">Contact</h2>
         <Grid container spacing={4} justifyContent="center">

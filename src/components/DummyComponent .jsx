@@ -1,12 +1,21 @@
 import React from "react";
-import { Card, CardMedia, CardContent, Typography, Tooltip } from "@mui/material";
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  Tooltip,
+} from "@mui/material";
 import { makeStyles } from "@material-ui/core";
-import image1 from "./images/photo-billetest.jpeg";
+import image1 from "./images/noir.jpeg";
 import image2 from "./images/photo-s123.jpg";
 import image3 from "./images/photo-resul.jpg";
 import image4 from "./images/photo-s12.jpg";
 import image5 from "./images/photo-ceit.jpg";
 import image6 from "./images/photo-billeto.jpg";
+import image7 from "./images/vert.jpeg";
+import image8 from "./images/vert2.jpeg";
+import image9 from "./images/3.jpeg";
 
 const useStyles = makeStyles({
   root: {
@@ -32,14 +41,18 @@ const useStyles = makeStyles({
   },
 });
 
-const images = [image1, image2, image3, image4, image5, image6];
+const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9 ];
 
 const texts = [
   "Billet avec sécurité noire",
   "SSD durabilité et endurance élevée au système financier sophistiqué",
   "Diagnostic légal visant à déterminer l'authenticité des billets et à identifier tout problème potentiel de contrefaçon ou de falsification après le nettoyage complet",
   "SSD UNIVERSELLE ",
+  "Diagnostic  visant à déterminer l'authenticité des Produits",
   "Billets de Banque Masqués constituent une avancée significative dans le domaine de la sécurité financière. Conçus pour dissimuler des éléments de sécurité essentiels, ces billets présentent des caractéristiques invisibles à l'œil nu.",
+  "billet avec sécurité verte",
+  "billet avec sécurité verte",
+  "Poudre à encres spéciales et des dispositifs de sécurité pour éviter la contrefaçon",
 ];
 
 const DummyComponent = () => {
@@ -50,15 +63,16 @@ const DummyComponent = () => {
       {images.map((image, index) => (
         <div className="p-3 w-full lg:w-1/3" key={index}>
           <Card className={classes.root}>
-            <CardMedia
-              className={classes.media}
-              image={image}
-              title="Image"
-            />
+            <CardMedia className={classes.media} image={image} title="Image" />
             <CardContent className={classes.content}>
               <Tooltip title={texts[index]} placement="top">
-                <Typography variant="body2" color="textSecondary" component="p" className="truncate">
-                  {texts[index]} 
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className="truncate"
+                >
+                  {texts[index]}
                 </Typography>
               </Tooltip>
             </CardContent>

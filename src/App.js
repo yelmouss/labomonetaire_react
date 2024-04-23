@@ -10,12 +10,14 @@ import PresentationSection from "./components/PresentationSection";
 import ProductSection from "./components/ProductSection";
 import VideoSection from "./components/VideoSection";
 import ContactSection from "./components/Contact";
+import Translate from "./components/Translate";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App  flex flex-col min-h-screen ">
         <Header />
+        <Translate />
         <FirstSection />
         <PresentationSection />
         <SecondSection />
@@ -24,6 +26,7 @@ function App() {
         <ProductSection />
         <VideoSection />
         <ContactSection />
+
         <Footer />
       </div>
     </BrowserRouter>
