@@ -13,7 +13,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Logo from "./images/logo-labo.jpeg";
 import { Link, NavLink } from "react-router-dom";
 
-const pages = ["Présentation", "Services", "Contact"];
+const pages = ["Présentation", "Services", "Témoignages", "Contact"];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,44 +27,41 @@ function Header() {
     setAnchorElNav(null);
   };
 
-
-  const [activeSection, setActiveSection] = React.useState('');
+  const [activeSection, setActiveSection] = React.useState("");
   const [isFullscreen] = React.useState(false);
   const handleScroll = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       document.title = `Labo monétaire - ${sectionId}`;
     }
   };
 
-
-
   React.useEffect(() => {
-   
-
     const handleScrollEvent = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
-      const sections = ["Présentation", "Services", "Contact"];
+      const sections = ["Présentation", "Services", "Témoignages", "Contact"];
 
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section);
             return;
           }
         }
       }
-      setActiveSection('');
+      setActiveSection("");
     };
 
-    window.addEventListener('scroll', handleScrollEvent);
+    window.addEventListener("scroll", handleScrollEvent);
 
     return () => {
-
-      window.removeEventListener('scroll', handleScrollEvent);
+      window.removeEventListener("scroll", handleScrollEvent);
     };
   }, []);
   return (
@@ -114,7 +111,10 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                   <NavLink to={`#${page}`} onClick={() => handleScroll(page)} > {page} </NavLink>
+                  <NavLink to={`#${page}`} onClick={() => handleScroll(page)}>
+                    {" "}
+                    {page}{" "}
+                  </NavLink>
                 </MenuItem>
               ))}
             </Menu>
@@ -153,9 +153,11 @@ function Header() {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
-                
               >
-                <NavLink to={`#${page}`} onClick={() => handleScroll(page)} > {page} </NavLink>
+                <NavLink to={`#${page}`} onClick={() => handleScroll(page)}>
+                  {" "}
+                  {page}{" "}
+                </NavLink>
               </Button>
             ))}
           </Box>

@@ -36,3 +36,9 @@ body {
   min-height: 100%;
   align-self: center;
 }
+.rounded-image {
+  width: 80px;      /* Définissez la largeur de l'image */
+  height: 80px;     /* Définissez la hauteur de l'image */
+  object-fit: cover; /* S'assure que l'image couvre la zone sans déformation */
+  border-radius: 50%; /* Rend l'image ronde */
+}

@@ -11,7 +11,8 @@ const PresentationSection = () => {
       className="py-16 bg-gradient-to-b from-blue-100 to-transparent"
     >
       <Container maxWidth="lg" className="px-4 text-start">
-      <h2 className="text-3xl font-bold text-start mb-8">Présentation</h2>
+
+      <h2 className="text-5xl font-bold text-blue-500 text-start mb-8">Présentation</h2>
        <br />
         <hr />
         <Grid container spacing={8}>

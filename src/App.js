@@ -11,6 +11,7 @@ import ProductSection from "./components/ProductSection";
 import VideoSection from "./components/VideoSection";
 import ContactSection from "./components/Contact";
 import Translate from "./components/Translate";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <FirstSection />
         <PresentationSection />
         <SecondSection />
+
+        <Testimonials />
         <DummyComponent />
         <Services />
         <ProductSection />

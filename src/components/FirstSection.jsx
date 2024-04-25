@@ -11,7 +11,7 @@ function FirstSection() {
   return (
     <div className="bg-gradient-to-t from-blue-100 to-transparent p-5">
 <Container>
-      <h2 className="text-3xl font-bold text-start mb-8">Labo Monétaire</h2>
+      <h2 className="text-5xl font-bold text-blue-500 text-start mb-8">Labo Monétaire</h2>
       <Stack
         direction="row"
         spacing={2}

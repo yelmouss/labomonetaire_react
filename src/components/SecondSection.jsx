@@ -11,7 +11,7 @@ import { Container, Typography } from "@mui/material";
 
 function SecondSection() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -22,8 +22,8 @@ function SecondSection() {
   };
 
   return (
-    <div className="bg-gradient-to-t from-blue-100 to-transparent p-9">
-      <Container className="p-5 text-blue-900 font-bold italic">
+    <div className="bg-gradient-to-t from-blue-100 to-transparent">
+      <Container className="text-blue-900 font-bold italic">
         <Slider {...settings} className="text-center">
           <Container maxWidth="lg" className="py-8 px-4 md:px-16">
             <div className="flex items-center justify-center ">

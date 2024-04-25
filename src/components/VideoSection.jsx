@@ -60,7 +60,11 @@ const VideoSection = () => {
   return (
     <div className=" bg-gradient-to-t from-blue-100 to-transparent">
       <Container>
-        <h2 className="text-3xl font-bold text-start mb-8">Vidéos</h2>
+   
+
+        <h2 className="text-5xl font-bold text-blue-500 text-start mb-8">
+        Vidéos
+        </h2>
         <hr />
         <Grid container spacing={4} justifyContent="center">
           {videos.map((video, index) => (

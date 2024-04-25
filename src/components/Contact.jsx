@@ -68,13 +68,17 @@ const ContactSection = () => {
         handleFormReset(); // Réinitialiser le formulaire
       } else {
         setAlertSeverity("error");
-        setAlertMessage("Une erreur s'est produite lors de l'envoi du formulaire.");
+        setAlertMessage(
+          "Une erreur s'est produite lors de l'envoi du formulaire."
+        );
         setAlertOpen(true);
       }
     } catch (error) {
       console.error("Erreur lors de l'envoi du formulaire:", error);
       setAlertSeverity("error");
-      setAlertMessage("Une erreur s'est produite lors de l'envoi du formulaire.");
+      setAlertMessage(
+        "Une erreur s'est produite lors de l'envoi du formulaire."
+      );
       setAlertOpen(true);
     }
   };
@@ -86,7 +90,9 @@ const ContactSection = () => {
     >
       <CustomParticles />
       <Container>
-        <h2 className="text-3xl font-bold text-start mb-8">Contact</h2>
+        <h2 className="text-5xl font-bold text-blue-500 text-start mb-8">
+          Contact
+        </h2>
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} md={6}>
             <Paper elevation={10}>
